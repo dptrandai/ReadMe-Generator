@@ -1,12 +1,19 @@
-const questions = [
+const inquirer = require("inquirer");
+const fs = require("fs");
+const axios = require("axios");
 
-];
+inquirer.prompt([
+    {
+        message: "",
+        name: "",
+    },
+    {
 
-function writeToFile(fileName, data) {
-}
+    },
+]).then(function(response){
+    //vars for the prompt response
+    const username = response.username
 
-function init() {
-
-}
-
-init();
+    axios
+    
+})
